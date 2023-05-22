@@ -10,7 +10,7 @@
     margin: 0 auto;
   }
 div.gallery {
-  border: 1px transparent black;
+  
   background-color:rgb(89 159 251);
   border-radius: 8%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -27,7 +27,7 @@ div.desc {
 }
 * {
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1024px;
 }
 .container {
   padding: 30px;
@@ -42,14 +42,21 @@ div.desc {
   justify-content: flex-end;
   
 }
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .container {
-    width: 49.99%;
-    margin: 6px 0;
+    flex: 33.33%;
+    width: 33.33%;
   }
 }
-@media only screen and (500px) {
+@media screen and (max-width: 768px) {
   .container {
+    flex: 50%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container {
+    flex: 75%;
     width: 100%;
   }
 }
